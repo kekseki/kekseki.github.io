@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+.RobotoFont{       /*za 404*/
+  font-family: "Roboto", sans-serif;
+}
+.getBackHome {
+    background-color: #2196F3;     
+    border: none; 
+    color: white; 
+    padding: 14px 25px;
+    text-decoration:none;
+    cursor: pointer;
+  }
+.getBackHome:hover {
+  background: #0b7dda;
+  border: none; 
+  color: white; 
+  padding: 14px 25px;
+  text-decoration:none;
+  cursor: pointer;
+  }
+.secretLink {
+    background-color: #FFDB00;     
+    border: none; 
+    color: white; 
+    padding: 14px 25px;
+    text-decoration:none;
+    cursor: pointer;
+  }
+.secretlink:hover {
+  background: #FFBF03;
+  border: none; 
+  color: white; 
+  padding: 14px 25px;
+  text-decoration:none;
+  cursor: pointer;
+  }
+
+.dolik{
+  margin-top: 33px;
+}
