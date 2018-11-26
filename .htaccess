@@ -1,2 +1,1 @@
-RedirectMatch 301 /site(.*) https://dl.dropbox.com/u/1234567/site/$1
 ErrorDocument 404 /404.html
