@@ -39,3 +39,25 @@
 .dolik{
   margin-top: 33px;
 }
+
+
+h3{
+    width: 500px;
+    height: 100px;
+    font-size: 65px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.secondmessage{
+  font-size: 20px;
+  margin-top: 0px;
+  text-align: center;
+  font-weight: normal;
+
+}
+
