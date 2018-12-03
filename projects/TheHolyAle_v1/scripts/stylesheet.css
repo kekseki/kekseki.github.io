@@ -1,0 +1,27 @@
+.retas {
+    width: 98%;
+    height: 94%;
+    border-style: 1px;
+}
+.centralna, .settings {
+	color: white;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   font-family: Arial ;
+}
+
+.musaka{
+	font-size: 987%;
+	color:yellow;
+}
+
+
+.lajtOF{
+	font-size: 130%;
+}
+
+.infic{
+	font-size: 300%;
+	background-color: 212121;
+}

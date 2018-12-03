@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<title>The Holy Ale v1</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="./scripts/stylesheet.css" type="text/css">
+		<script type="text/javascript" src="./scripts/glMatrix-0.9.5.min.js"></script>
+		<script src="./scripts/MainScript.js" type="text/javascript"></script>
+		<script src="./scripts/Modeli.js" type="text/javascript"></script>
+		<script src="./scripts/mainMenu.js" type="text/javascript"></script>
+		
+	    <!-- Fragment shader program -->
+	    <script id="shader-fs" type="x-shader/x-fragment">
+			precision mediump float;
+
+	    	// uniform attribute for setting texture coordinates
+		    varying vec2 vTextureCoord;
+	    	// uniform attribute for setting lighting
+		    varying vec3 vLightWeighting;
+
+			// uniform attribute for setting 2D sampler
+		    uniform sampler2D uSampler;
+
+		    void main(void) {
+		    	// sample the fragment color from texture
+		        vec4 textureColor = texture2D(uSampler, vec2(vTextureCoord.s, vTextureCoord.t));
+		        gl_FragColor = vec4(textureColor.rgb * vLightWeighting, textureColor.a);
+		    }
+	    </script>    
+	    <!-- Vertex shader program -->	    
+	    <script id="shader-vs" type="x-shader/x-vertex">
+    		// atributes for setting vertex position, normals and texture coordinates
+		    attribute vec3 aVertexPosition;
+		    attribute vec3 aVertexNormal;
+		    attribute vec2 aTextureCoord;
+
+		    uniform mat4 uMVMatrix;	// model-view matrix
+		    uniform mat4 uPMatrix;	// projection matrix
+		    uniform mat3 uNMatrix;	// normal matrix
+
+		    uniform vec3 uAmbientColor;	// ambient color uniform
+
+		    uniform vec3 uPointLightingLocation;	// light direction uniform
+		    uniform vec3 uPointLightingColor;		// light color
+
+		    uniform bool uUseLighting;	// lighting switch
+
+			// variable for passing texture coordinates and lighting weights
+			// from vertex shader to fragment shader
+		    varying vec2 vTextureCoord;
+		    varying vec3 vLightWeighting;
+
+		    void main(void) {
+		    	// calculate the vertex position
+		        vec4 mvPosition = uMVMatrix * vec4(aVertexPosition, 1.0);
+		        gl_Position = uPMatrix * mvPosition;
+		        vTextureCoord = aTextureCoord;
+
+		        if (!uUseLighting) {
+		            vLightWeighting = vec3(1.0, 1.0, 1.0);
+		        } else {
+		        	// transform normals
+		            vec3 lightDirection = normalize(uPointLightingLocation);
+
+		            // calculate weight for directional light
+		            vec3 transformedNormal = uNMatrix * aVertexNormal;
+		            float directionalLightWeighting = max(dot(transformedNormal, lightDirection), 0.0);
+
+		            // calculate lighting
+		            vLightWeighting = uAmbientColor + uPointLightingColor * directionalLightWeighting;
+		        }
+		    }
+		</script>
+
+	</head>
+
+	<body onload="document.getElementById('content').style.visibility='hidden'; document.getElementById('introScreen').style.visibility='visible';">
+
+	<script>
+	var izvedlo=0; //spodnje obvestilo
+	window.onresize = function(event) {			//cekira ali se je okno spremenilo
+    	if(ceSmoNaIntroju==1 && izvedlo==0){
+    		izvedlo = 1;
+    		alert("You have changed your screen size. For optimal experience change it back or reload the page");
+    	}
+	};
+
+	
+	</script>
+
+
+		<div id="content">
+			<div id="playerLife" style="color: white; position: absolute; margin-left: 50px; ">
+				<script>
+					var div = document.getElementById('playerLife');
+					div.style.bottom = (window.innerHeight-60)-55;
+					for (var i=0; i<playerHealth; i++) {
+						document.getElementById("playerLife").innerHTML += "<img src='assets/heart.png' style='width:64px;height:64px;'>";
+					}
+				</script>
+			</div>
+
+			<div id="highscore" style="font-family: Berlin Sans FB; font-size: 60px;color: #e0e000; position: absolute;">
+				<script>
+					var div = document.getElementById('highscore');
+					div.style.left = 50;
+					div.style.top = (window.innerHeight-60)-95;
+				</script>
+				SCORE: 0
+			</div>
+
+			<div id="time" style="font-family: Berlin Sans FB; font-size: 60px;color: white; position: absolute;">
+				<script>
+					var div = document.getElementById('time');
+					div.style.left = (window.innerWidth-35)-388;
+					div.style.bottom = (window.innerHeight-60)-55;
+				</script>				
+			</div>
+
+			<div id="sword" style="position: absolute;">
+				<script>
+					var div = document.getElementById('sword');
+					div.style.left = (window.innerWidth-35)-675;
+					div.style.top = (window.innerHeight-60)-592;
+				</script>
+				<img src='assets/sword.png' style='width:600px;height:600px;'>
+			</div>
+
+			<div style="position: absolute;">
+				<canvas id="ercanvas" width="1280px" height="720px">
+					Browser does not support canvas. Upgrade your Internet Explorer.
+				</canvas>
+			</div>
+
+
+			<div id="introScreen" class="retas" style="position: absolute;">
+				
+				<table id="theTabela" class="centralna" bgcolor="black" height="99%">
+					
+					<tr>
+  						<td colspan="3" rowspan="2" width="70%"> 
+  							<img src="./assets/naslov.png" width="88%">
+  							<div id="pokaziSe" style="visibility:hidden;white-space:pre;">None shall pass</div>
+  						</td>
+  						<td colspan="4" bgcolor="#212121" onclick='musaka();'><div class="musaka">START</div></td>
+  					</tr>
+
+  					<tr height="15%">
+  						<td colspan="4"><div class="infic" onclick='informator();'>INFO</div></td>
+  					</tr>
+
+  					<tr height="5%" bgcolor="#212121">
+  						<td colspan="3" style="white-space:pre;">Use  <code>WASD</code>  to move around,  <code>arrow keys</code>  to look around,  <code>ENETER</code>  to attack,  <code>ESC</code>  to pause.</td>
+  						<td bgcolor="black" align="right"><div style="white-space:pre;">Settings:     </div></td>
+  						<td width="7%"><div id="1div" class="lajtOF" onclick='lightingOFF();'><b>HD</b></div></td>
+  						<td width="7%"><div id="2div" class="soundOF" onclick='soundOFF();'><img src="assets/soundON.png" width="38%"></div></td>
+  						<td width="7%"><div id="3div" class="musicOF" onclick='musicOFF();'><img src="assets/musicON.png" width="34%"></div></td>
+  					</tr>
+
+				</table>
+   					
+
+			</div>
+
+			<canvas id="glcanvas" width="1280px" height="720px">
+				Browser does not support canvas. Upgrade your Internet Explorer.
+			</canvas>
+			
+			
+			
+		</div>
+		<div id="controls" style="white-space:pre;"></div>
+	</body>
+	<p hidden><audio id="music" controls autoplay loop>
+  			<source src="./sounds/theme.mp3" type="audio/mpeg">
+	</audio></p>
+</html>
