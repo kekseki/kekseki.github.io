@@ -15,7 +15,7 @@
 
 const MODEL_OBJ_URL = '../assets/model.obj';
 const MODEL_MTL_URL = '../assets/materials.mtl';
-const MODEL_SCALE = 0.5;
+const MODEL_SCALE = 0.8;
 
 /**
  * Container class to manage connecting to the WebXR Device API
