@@ -76,9 +76,6 @@ class Reticle extends THREE.Object3D {
    * @param {XRCoordinateSystem} frameOfRef
    */
   async update(frameOfRef) {
-    if (window.value==1) {
-      return;
-    }
     this.raycaster = this.raycaster || new THREE.Raycaster();
     this.raycaster.setFromCamera({ x: 0, y: 0 }, this.camera);
     const ray = this.raycaster.ray;
