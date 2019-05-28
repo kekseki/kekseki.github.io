@@ -13,9 +13,9 @@
  * limitations under the License.
  */
 
-const MODEL_OBJ_URL = '../assets/ArcticFox_Posed.obj';
-const MODEL_MTL_URL = '../assets/ArcticFox_Posed.mtl';
-const MODEL_SCALE = 0.1;
+const MODEL_OBJ_URL = '../assets/finalFire.obj';
+const MODEL_MTL_URL = '../assets/finalFire.mtl';
+const MODEL_SCALE = 0.89;
 
 /**
  * Container class to manage connecting to the WebXR Device API
@@ -34,6 +34,7 @@ class App {
    * Fetches the XRDevice, if available.
    */
   async init() {
+    window.value=0;  
     // The entry point of the WebXR Device API is on `navigator.xr`.
     // We also want to ensure that `XRSession` has `requestHitTest`,
     // indicating that the #webxr-hit-test flag is enabled.
@@ -60,6 +61,25 @@ class App {
     // since the spec requires calling `device.requestSession()` within a
     // user gesture.
     document.querySelector('#enter-ar').addEventListener('click', this.onEnterAR);
+
+        var Posture = {
+          type: 'annotation',
+          label: 'Seated Posture',
+          billboard: [true, true],
+          position: [0.190047, 0.217685, -0.245],
+          normal: [0, 1, -1],
+          action: function action() {
+            var dialog = document.getElementById('Posture');
+            if (!dialog.showModal) {
+              dialogPolyfill.registerDialog(dialog);
+            }
+            dialog.showModal();
+            dialog.querySelector('.close').addEventListener('click', function () {
+              dialog.close();
+            });
+          }
+        };
+        exports.Posture = Posture;
   }
 
   /**
@@ -121,10 +141,6 @@ class App {
     });
     this.renderer.autoClear = false;
 
-    // We must tell the renderer that it needs to render shadows.
-    this.renderer.shadowMap.enabled = true;
-    this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-
     this.gl = this.renderer.getContext();
 
     // Ensure that the context we want to write to is compatible
@@ -135,17 +151,9 @@ class App {
     // using our new renderer's context
     this.session.baseLayer = new XRWebGLLayer(this.session, this.gl);
 
-    // Set the XRSession framebuffer on our three.js renderer rather
-    // than using the default framebuffer -- this is necessary for things
-    // in three.js that use other render targets, like shadows.
-    const framebuffer = this.session.baseLayer.framebuffer;
-    this.renderer.setFramebuffer(framebuffer);
-
     // A THREE.Scene contains the scene graph for all objects in the
     // render scene. Call our utility which gives us a THREE.Scene
-    // with a few lights and surface to render our shadows. Lights need
-    // to be configured in order to use shadows, see `shared/utils.js`
-    // for more information.
+    // with a few lights and meshes already in the scene.
     this.scene = DemoUtils.createLitScene();
 
     // Use the DemoUtils.loadModel to load our OBJ and MTL. The promise
@@ -155,14 +163,11 @@ class App {
     DemoUtils.loadModel(MODEL_OBJ_URL, MODEL_MTL_URL).then(model => {
       this.model = model;
 
-      // Some models contain multiple meshes, so we want to make sure
-      // all of our meshes within the model case a shadow.
-      this.model.children.forEach(mesh => mesh.castShadow = true);
-
       // Every model is different -- you may have to adjust the scale
       // of a model depending on the use.
       this.model.scale.set(MODEL_SCALE, MODEL_SCALE, MODEL_SCALE);
     });
+
 
     // We'll update the camera matrices directly from API, so
     // disable matrix auto updates so three.js doesn't attempt
@@ -233,9 +238,21 @@ class App {
    * the screen, and if a hit is found, use it to place our object
    * at the point of collision.
    */
+   
   async onClick(e) {
+    //var abtn = document.getElementById("btnn");
+    /*var abtn2 = document.getElementById("btnn2");
+    var abtn3 = document.getElementById("btnn3");
+    abtn.onclick = function() {return;}
+    abtn2.onclick = function() {return;}
+    abtn3.onclick = function() {return;}*/
+
     // If our model is not yet loaded, abort
     if (!this.model) {
+      return;
+    }
+    //can't place new object if ours is already placed
+    if (window.value==1) {
       return;
     }
 
@@ -287,16 +304,9 @@ class App {
       // rotate the model only on the Y axis.
       DemoUtils.lookAtOnY(this.model, this.camera);
 
-      // Now that we've found a collision from the hit test, let's use
-      // the Y position of that hit and assume that's the floor. We created
-      // a mesh in `DemoUtils.createLitScene()` that receives shadows, so set
-      // it's Y position to that of the hit matrix so that shadows appear to be
-      // cast on the ground under the model.
-      const shadowMesh = this.scene.children.find(c => c.name === 'shadowMesh');
-      shadowMesh.position.y = this.model.position.y;
-
       // Ensure our model has been added to the scene.
       this.scene.add(this.model);
+      window.value=1;
     }
   }
 };
