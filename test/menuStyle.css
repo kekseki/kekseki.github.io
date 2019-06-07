@@ -5,10 +5,10 @@
   font-size: 55px;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 1%;
   text-shadow: 2px 2px #595858;
   font-family: "Roboto", sans-serif;
-  padding: 30px;
+  padding: 7%;
 }
 
   .slikaTipaPozara{
@@ -83,3 +83,5 @@ a:hover{
     bottom: 20px;
     right: 20px;
 }
+
+
