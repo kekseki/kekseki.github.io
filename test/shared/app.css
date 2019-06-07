@@ -1,17 +1,13 @@
-/*
- * Copyright 2017 Google Inc. All Rights Reserved.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+
 
 body {
   font-family: monospace;
@@ -22,7 +18,8 @@ body {
   height: 100vh;
   -webkit-user-select: none;
   user-select: none;
-  background-color: rgb(69, 90, 100);
+  background-color: rgb(48, 49, 50);
+  text-decoration-color: white;
 }
 
 canvas {
@@ -40,8 +37,8 @@ div.demo-card {
 
 #enter-ar-info .mdl-card__title {
   color: #fff;
-  height: 176px;
-  background-color: rgb(96, 125, 139);
+  height: 100px;
+  background-color: rgb(31,31,31);
 }
 
 body.unsupported #enter-ar-info {
@@ -62,8 +59,8 @@ body.unsupported #unsupported-info {
 
 #info {
   position: absolute;
-  left: 50%;
-  top: 0;
+  left: 46%;
+  top: 78%;
   transform: translate(-50%, 0);
   margin: 1em 1em 2em 1em;
   z-index: 10;
@@ -109,4 +106,8 @@ body.ar #stabilization {
 
 body.ar.stabilized #stabilization {
   display: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
