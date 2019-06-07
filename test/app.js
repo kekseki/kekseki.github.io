@@ -1,5 +1,5 @@
-const MODEL_OBJ_URL = '../assets/finalFire.obj';
-const MODEL_MTL_URL = '../assets/finalFire.mtl';
+const MODEL_OBJ_URL = 'assets/finalFire.obj';
+const MODEL_MTL_URL = 'assets/finalFire.mtl';
 const MODEL_SCALE = 0.89;
 
 /**
