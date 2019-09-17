@@ -9660,14 +9660,23 @@ hr.light {
     color: #f4623a;
   }
 }
-
+@media only screen and (max-device-width: 1366px) {
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background: linear-gradient(to bottom, rgba(124, 181, 210, 0.6) 0%, rgba(201, 4, 12, 0.5) 80%), url("../img/naslovnica_slo.jpg");    
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}}
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background: linear-gradient(to bottom, rgba(124, 181, 210, 0.6) 0%, rgba(201, 4, 12, 0.5) 80%), url("../img/naslovnica_slo.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
   background-size: cover;
 }
 
