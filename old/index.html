@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Damjan</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">   	<!-- Za sumnike -->
+<link rel="shortcut icon" href="./imgs/ikonaa.png" />					<!-- Za ikono -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />		<!-- user can't zoom (za mobile) -->
+<link rel="stylesheet" href="stylesPhone.css" media="only screen and (max-device-width: 480px)" type="text/css">	  				<!--for mobile (preveri pri boksih telefonih ci se stimlejo tej px-i) -->
+<link id="stili" rel="stylesheet" href="styles.css" media="only screen and (min-device-width: 480px)"  type="text/css">					<!-- for alles -->
+	
+<script>	//menjava stajlov
+var indeks=1;
+var klikam = new Audio("./res/click.wav");
+function swapStyleSheet(){
+	if (indeks==1){
+		document.getElementById('stili').setAttribute('href', 'stylesBW.css');
+		indeks = 0;
+	}
+	else{
+		document.getElementById('stili').setAttribute('href', 'styles.css');
+		indeks = 1;	
+	}
+	klikam.play();
+}
+</script>
+<script> //Za Analitiko 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39849691-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+	<div id="outer" class="retas">
+			<div id="container">	
+				<table id="theTabela"  class="glavnaTabela"  border="0px">  <!-- border="0px"  ZA BORDER -->
+					
+					<tr style="height: 18%">
+  						<td rowspan="3" width="42%" align="center" class="slikaMene" style="vertical-align:middle;"> 
+  							<img src="./res/mojaSlika.jpg" width="99%" class="me">
+  						</td>
+  						<td style="vertical-align: top;"><div class="ime">
+  						<a class="easterEgg" onclick="swapStyleSheet()" style="cursor:pointer;">D</a>amjan Pjević
+  						</div></td>
+  					</tr>
+
+  					<tr>
+  						<td class="whatIDo" style="position: relative;">
+  							
+  							<div style="position: relative;">
+	  							<ul style="list-style-type:none; padding: 0; margin-top: 0.3vw;">
+  									<li><a href="https://www.youtube.com/playlist?list=PLSIKNxNTHP8qXosSzSqt3KSoSeIOvZFcp">Videography</a></li>
+  									<li><a href="https://www.flickr.com/photos/damjancam/albums">Photography</a></li>
+  									<li><a href="https://www.behance.net/damjanp">Programming
+  									<br>Design</a></li>
+								</ul>
+							</div>
+							<div class="email" style="position: absolute;">
+								damjan@pjevic.com	
+							</div>
+
+	  					</td>
+  					</tr>
+
+  					<tr style="height: 10%" >
+  						<td>
+  							<div class="social">
+  								<span><a href="https://www.youtube.com/damjanpjevic" target="_blank"><img src="./imgs/social/yt.svg" /></a></span>
+  								<span><a href="https://www.instagram.com/damjanp0" target="_blank"><img src="./imgs/social/ig.svg" /></a></span>
+  								<span><a href="https://www.facebook.com/damjan.pjevic" target="_blank"><img src="./imgs/social/fb.svg" /></a></span>
+  								<!--<span><a href="https://twitter.com/damjanp96" target="_blank"><img src="./imgs/social/tw.svg" /></a></span> 	 for twitter uncomment this line -->
+  								<span><a href="https://m.me/damjan.pjevic" target="_blank"><img src="./imgs/social/fbMesedz.svg" /></a></span> 
+  							</div>
+  						</td>
+  					</tr>
+
+				</table>	
+		</div>
+	</div>
+</body>
+</html>
