@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draga Jasmina</title>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="styles.css" rel="stylesheet">
+
+	<script>	//menjava stajlov
+	var indeks=1;
+	function hide() {
+	  var x = document.getElementById("fotka");
+	  if (x.style.opacity == 0) {
+	  	console.log("go visible!");
+	    x.style.opacity= 1;
+	  } else {
+	  	console.log("go hidden!");
+	    x.style.opacity= 0;
+	  }
+	}
+	</script>
+</head>
+<body>
+	<div>
+		<p class="naslov">Draga Jasmina!</p>
+		<p>Si ena izmed najbolj hardworking oseba, ki jih poznam. Vsak projekt, ki ga dodaš na svoj seznam projektov, ga narediš tako dobro, da ga nevem niti pohvalit in se vsakič vprašam kaj delam jaz s svojim časom, ker vem, da se ti nikoli nebom mogel približati.</p>
+		<p>Tokrat si se mi ti približala. V letih. Sva isto stara in želim ti vse dobro v tem letu 23. Ostani pridna. Polno lepih (skupnih) spominov, novih avantur in prijateljev. Vsak dodaten projekt, ki pa si ga zastaviš, pa upam da narediš z najmanj stresa in dovolj spanca. </p>
+		<p>Oprosti da letos nemoreva skupaj praznovat tvojega rojstnega dneva z eno Meto in Baziliko in sprehodom. Ampak vedi da te imam rad. Zelo zelo zelo. In če bi lahko bi te močno objel</p>
+		<p style="text-align: right;"> - Damjan</p>
+	</div>
+	<div id="fotka" onclick="hide()">
+		<img src="bebi.jpg" width="500px" height="700px">
+	</div>
+
+</body>
+</html>
