@@ -7,29 +7,46 @@
 
 	<link href="styles.css" rel="stylesheet">
 
-	<script>	//menjava stajlov
+	<script>
 	var indeks=1;
-	function hide() {
-	  var x = document.getElementById("fotka");
-	  if (x.style.opacity == 0) {
-	  	console.log("go visible!");
-	    x.style.opacity= 1;
-	  } else {
-	  	console.log("go hidden!");
-	    x.style.opacity= 0;
-	  }
+	function hideF() {
+	  var fotka = document.getElementById("fotka");
+	  fotka.style.display = "none";
+	  
+	  //if (fotka.style.opacity == 0) {
+	    //fotka.style.opacity= 1;
+	  //} else {
+	    //fotka.style.opacity= 0;
+	  //}
+	}
+
+	function hideT() {
+		var fotka = document.getElementById("fotka");
+		var tekst = document.getElementById("tekst");
+		if (fotka.style.display === "none") {
+			tekst.style.display = "none";
+		}
+	}
+	function show(){
+		var fotka = document.getElementById("fotka");
+		var tekst = document.getElementById("tekst");
+			tekst.style.display = "block";		
+			fotka.style.display = "block";
 	}
 	</script>
 </head>
 <body>
-	<div>
+	<div id=link class=link onclick="show()">
+		<a href="https://youtu.be/Y-vvZ9xROeo" style="text-decoration: none">www.youtube.com/Y-vvZ9xROeo</a>
+	</div>
+	<div id="tekst" onclick="hideT()">
 		<p class="naslov">Draga Jasmina!</p>
 		<p>Si ena izmed najbolj hardworking oseba, ki jih poznam. Vsak projekt, ki ga dodaš na svoj seznam projektov, ga narediš tako dobro, da ga nevem niti pohvalit in se vsakič vprašam kaj delam jaz s svojim časom, ker vem, da se ti nikoli nebom mogel približati.</p>
 		<p>Tokrat si se mi ti približala. V letih. Sva isto stara in želim ti vse dobro v tem letu 23. Ostani pridna. Polno lepih (skupnih) spominov, novih avantur in prijateljev. Vsak dodaten projekt, ki pa si ga zastaviš, pa upam da narediš z najmanj stresa in dovolj spanca. </p>
-		<p>Oprosti da letos nemoreva skupaj praznovat tvojega rojstnega dneva z eno Meto in Baziliko in sprehodom. Ampak vedi da te imam rad. Zelo zelo zelo. In če bi lahko bi te močno objel</p>
+		<p>Oprosti da letos nemoreva skupaj praznovat tvojega rojstnega dneva z eno Meto in Baziliko in sprehodom. Ampak vedi da te imam rad. Zelo zelo zelo. In če bi lahko, bi te močno objel</p>
 		<p style="text-align: right;"> - Damjan</p>
 	</div>
-	<div id="fotka" onclick="hide()">
+	<div id="fotka" onclick="hideF()">
 		<img src="bebi.jpg" width="500px" height="700px">
 	</div>
 
