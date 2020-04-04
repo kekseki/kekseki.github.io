@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<portfolio>
+	<item>
+		<types>
+			<type>photo</type>
+		</types>
+		<title><![CDATA[Rooms in the Rainforest Retreat]]></title>
+		<company><![CDATA[Rainforest Retreat]]></company>
+		<date>March 2020</date>
+		<photo>rainforest2.jpg</photo>
+		<description><![CDATA[Deep In the heart of west coast glacier country, Rainforest Retreat offers a range of accommodation set amongst lush native bush in the Franz Josef township. From luxury tree huts to backpackers rooms.<br> It was a short project where I took photos of a couple of rooms that ended up on their website. To check them, click here.]]></description>
+		<tags>
+			<tag>#interior</tag>
+		</tags>
+		<link>#</link>
+	</item>
+
+	<item>
+		<types>
+			<type>photo</type>
+		</types>
+		<title><![CDATA[New Year in Franz Josef Glacier]]></title>
+		<company><![CDATA[Monsoon Bar & Restaurant]]></company>
+		<date>December 2019</date>
+		<photo>monsoon.jpg</photo>
+		<description><![CDATA[With roaring fires & regular DJ’s, Monsoon bar carries a large range of New Zealand finest beers and wines, while the Monsoon restaurant satisfies hunger whatever the budget with all you can eat pizza nights, bar meals and a created à la carte menu.<br>Great Gatsby themed night and a live DJ was a perfect way to ring in 2020. My job as the official photographer was to capture the spirit of the roaring 20s and make memories for the guests while maintaining the photo booth. Click here if you want to check out the highlihts.]]></description>
+		<tags>
+			<tag>#event</tag>
+		</tags>
+		<link>#</link>
+	</item>
+
+	<item>
+		<types>
+			<type>video</type>
+		</types>
+		<title><![CDATA[Mladi Pomurci: Ta noč bo najina]]></title>
+		<company><![CDATA[Ansambel Mladi Pomurci]]></company>
+		<date>June 2019</date>
+		<photo>mpNoc2.jpg</photo>
+		<description><![CDATA[Produced the second official music video for the young volkmusik band of five. The polka “This night will be ours” tells a love story between a young couple caught between the day and the night; the sea and the stars. As the videographer, my job was to record, edit and help with the production of the music video. Click here to check it out.]]></description>
+		<tags>
+			<tag>#musicVideo</tag>
+		</tags>
+		<link>#</link>
+	</item>	
+
+	<item>
+		<types>
+			<type>video</type>
+		</types>
+		<title><![CDATA[Mladi Pomurci: Svet postal bi lep]]></title>
+		<company><![CDATA[Ansambel Mladi Pomurci]]></company>
+		<date>May 2019</date>
+		<photo>mpSvet.jpg</photo>
+		<description><![CDATA[The first offical music video I filmed for the young band.]]></description>
+		<tags>
+			<tag>#musicVideo</tag>
+		</tags>
+		<link>#</link>
+	</item>	
+
+</portfolio>
