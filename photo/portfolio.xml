@@ -33,6 +33,24 @@
 	<item>
 		<types>
 			<type>video</type>
+			<type>photo</type>
+		</types>
+		<title><![CDATA[Videographer at CCIS]]></title>
+		<company><![CDATA[Chamber of Commerce and Industry of Slovenia]]></company>
+		<date>2019</date>
+		<photo>gzs.jpg</photo>
+		<description><![CDATA[The Chamber of Commerce and Industry of Slovenia is a non-governmental organisation representing the interests of the Slovenian economy. It provides essential services for enterprises operating in Slovenia. For the organisations I produced over 50 videos (presentations and reportages) for various events organised by the chamber.<br><i style="font-size: 15px;">“For the Chamber of Commerce and Industry of Slovenia’s online television (tv.GZS), Damjan Pjević has recorded, edited, photographed and managed to broadcast various events throughout the year. He worked diligently, was a friendly and communicative associate. Showed accuracy, precision and reliability in his work. Finished products were of high quality and always met, and often exceeded our expectations.” – Branka Murn, Managing editor at the tv.GZS</i>]]></description>
+		<tags>
+			<tag>#event</tag>
+			<tag>#portraits </tag>
+			<tag>#broadcasting</tag>
+		</tags>	
+		<link>#</link>
+	</item>	
+
+	<item>
+		<types>
+			<type>video</type>
 		</types>
 		<title><![CDATA[Mladi Pomurci: Ta noč bo najina]]></title>
 		<company><![CDATA[Ansambel Mladi Pomurci]]></company>
@@ -42,7 +60,7 @@
 		<tags>
 			<tag>#musicVideo</tag>
 		</tags>
-		<link>#</link>
+		<link>https://www.youtube.com/watch?v=X5LjJ0JqVxY</link>
 	</item>	
 
 	<item>
@@ -57,7 +75,24 @@
 		<tags>
 			<tag>#musicVideo</tag>
 		</tags>
-		<link>#</link>
+		<link>https://www.youtube.com/watch?v=h4evc9qe_zs</link>
 	</item>	
 
 </portfolio>
+
+<!--
+	<item>
+		<types>
+			<type></type>
+		</types>
+		<title><![CDATA[]]></title>
+		<company><![CDATA[]]></company>
+		<date></date>
+		<photo></photo>
+		<description><![CDATA[]]></description>
+		<tags>
+			<tag></tag>
+		</tags>
+		<link>#</link>
+	</item>	
+	-->
