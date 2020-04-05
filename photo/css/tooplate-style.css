@@ -17,8 +17,24 @@ p {
 }
 p:last-child { margin-bottom: 0; }
 
+.pagetitle{
+	font-family: 'Catamaran';
+  	font-weight: 700 !important;
+  	font-size: 3.6rem;
+  	letter-spacing: 2px; 
+  	margin-bottom: -2px;
+  	/*text-transform: uppercase; */
+}
+
+.titleIme{
+	font-family: 'Catamaran';
+  	font-weight: 500 !important;
+  	font-size: 1.2rem;
+}
+
 h2 { 
 	font-size: 40px; 
+	padding-bottom: 2px;
 	color: #1c1c1c;
 }
 
@@ -34,7 +50,6 @@ body {
 	font-weight: 300;
 	overflow-x: hidden;
 }
-
 
 
 .margin-b-15 { margin-bottom: 15px; }
@@ -159,7 +174,7 @@ body {
 	background-color: #0061c2;
 	color: white;
 	height: 100%;
-	padding: 35px 35px 45px;
+	padding: 35px 35px ;
 	text-align: center;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -180,14 +195,27 @@ body {
             justify-content: center;
 }
 
-.pagetitle { 
-	font-size: 3.6rem;
-	letter-spacing: 2px; 
-	text-transform: uppercase; 
-}
 
 .pagesubtitle { 
-	font-size: 1.4rem;
+}
+
+span + span {
+    margin-left: 0.5vw;
+}
+
+.ikona{
+  height: 50px;
+}
+
+.ikona:hover{
+  -webkit-filter: invert(100%) drop-shadow(0.15vw 0.08vw 0.25vw #A2A6A6) opacity(66%); /*zamenjati barvo če hočem bnw*/
+  filter:  drop-shadow(0.15vw 0.15vw 0.08vw #A2A6A6) opacity(66%) ;
+  cursor:pointer;
+}
+
+.ikona:active{
+  -webkit-filter: invert(100%) opacity(80%);
+  filter: opacity(80%);
 }
 
 .tm-gallery-container {	overflow-y: hidden; }
@@ -325,8 +353,6 @@ address { line-height: 2; }
 }
 
 
-
-
 @media (min-width: 524px) {	
 	/* Firefox hack 
    		https://css-tricks.com/snippets/css/css-hacks-targeting-firefox/
@@ -336,6 +362,27 @@ address { line-height: 2; }
 			margin: 8px 1%;	/* padding-bottom in % not working in FF, so use em instead. */
 		}
 	}
+}
+
+.opis{
+	text-align: justify;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+.content{
+	 padding: 2rem;
+}
+
+@media (max-width: 639px) {  /*phone mobile view*/
+	.tm-nav-item-link { padding: 5px; }
+	.media { display: flex; }
+	.tm-media-img-container{width: 50%;padding-left: 20px;}
+	.content {width: 50%;padding: 1.5rem 2rem 1.5rem 1.5rem}
+	h2 {font-size: 110%;}
+	h5{font-size: 75%;}
+	.opis{display: none;}
+	.hashtagi{font-size: 75%;}
+	.hvr-bounce-to-right{pointer-events: none;}
 }
 
 @media (min-width: 640px) {
@@ -398,7 +445,7 @@ address { line-height: 2; }
 	display: -ms-flexbox; 
 	display: flex;
 	height: 100%;
-	padding: 40px;
+	padding: 40px 40px 30px 40px;
 }
 
 @media screen and (max-width: 564px) {
