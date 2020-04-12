@@ -3,6 +3,21 @@
 	<item>
 		<types>
 			<type>photo</type>
+			<type>photo</type>
+		</types>
+		<title><![CDATA[...]]></title>
+		<company><![CDATA[Value Add Games]]></company>
+		<date>2019 - Present</date>
+		<photo>rainforest2.jpg</photo>
+		<description><![CDATA[....<BR>Multimedia content for various campaigns, including photos & videos.]]></description>
+		<tags>
+			<tag>#product #promo</tag>
+		</tags>
+		<link>#</link>
+	</item>
+	<item>
+		<types>
+			<type>photo</type>
 		</types>
 		<title><![CDATA[Rooms in the Rainforest Retreat]]></title>
 		<company><![CDATA[Rainforest Retreat]]></company>
@@ -97,11 +112,25 @@
 		<types>
 			<type>photo</type>
 		</types>
+		<title><![CDATA[Valeta]]></title>
+		<company><![CDATA[Primary School Škofljica]]></company>
+		<date>June 2018</date>
+		<photo>valeta.jpg</photo>
+		<description><![CDATA[Valeta is a tradition where on the last day of the last year of primary school students perform a dance and look back on the past nine years and the memories they made. For this project I was one of the official photographers. Click here to check out a couple of highlights.]]></description>
+		<tags>
+			<tag>#event</tag>
+		</tags>
+		<link>#</link>
+	</item>	
+	<item>
+		<types>
+			<type>photo</type>
+		</types>
 		<title><![CDATA[Funky Disco Soul Pop Party]]></title>
 		<company><![CDATA[Groovocado]]></company>
 		<date>May 2018</date>
 		<photo>groovo1.jpg</photo>
-		<description><![CDATA[Groovocado is one of the healthiest ‘musifruits’ on the planet, as large quantities contain all life-essential nutrients, such as soul, funk, disco, pop, rock’n’roll, and 80’s and 90’s gems. This was my second project for the band; a lively event in one of the smaller bars in the city center. Check out the highlights here.]]></description>
+		<description><![CDATA[Groovocado is one of the healthiest ‘musifruits’ on the planet, as large quantities contain all life-essential nutrients, such as soul, funk, disco, pop, rock’n’roll, and 80’s and 90’s gems. This was my second project for the band; a lively event in one of the smaller bars in the city center. The first concert I shot for them was one year prior to this. Check out the highlights from both events here.]]></description>
 		<tags>
 			<tag>#concert</tag>
 		</tags>
@@ -124,7 +153,24 @@
 		<link>#</link>
 	</item>	
 
-		<item>
+	<item>
+		<types>
+			<type>photo</type>
+		</types>
+		<title><![CDATA[Hochschultage]]></title>
+		<company><![CDATA[University of the Arts Bremen]]></company>
+		<date>February 2018</date>
+		<photo>hfk.jpg</photo>
+		<description><![CDATA[...class project//document for the class that is presenting our works to the public]]></description>
+		<tags>
+			<tag>#event</tag>
+		</tags>
+		<link>https://photos.google.com/share/AF1QipNizBaI1xOPVkzinnfsyHe_mXPr9cHNXIdQp_V6E1IvlzpF8v5xQYkbDhlnNbgp8Q?key=YlJDNXRsY3pFSlR2ZW9mT2I4cVNScVNQMDBfVG53
+https://photos.google.com/share/AF1QipPWjS2pr6Q8rkL9woSdtQR5KKlcju9LfHby8NeeKWA3NadWTnec5y3ucEbGJoKO8g?key=NXlsVVI0NjQtR2dsRFJFOURYaXljTXpDVng2cHJR
+</link>
+	</item>	
+
+	<item>
 		<types>
 			<type>video</type>
 		</types>
@@ -139,7 +185,7 @@
 		<link>https://www.youtube.com/watch?v=tzIzaiKU1ho</link>
 	</item>	
 
-		<item>
+	<item>
 		<types>
 			<type>video</type>
 		</types>
@@ -147,11 +193,67 @@
 		<company><![CDATA[Ansambel Mladi Pomurci]]></company>
 		<date>June 2017</date>
 		<photo>pip.jpg</photo>
-		<description><![CDATA[Mladi Pomurci is a volksmusik band of five that work from the Pomurje region in Slovenia. They perform Slovene folk music, Dalmatian and foreign music with the aim of spreading a cheerful spirit among the listeners. This was my first project for the band. The aim was to create a lyric music video for one of their new songs that tells a love story between a boy and a girl that come from different regions separated by a river.]]></description>
+		<description><![CDATA[Mladi Pomurci is a volksmusik band of five that work from the Pomurje region in Slovenia. They perform Slovene folk music, Dalmatian and foreign music with the aim of spreading a cheerful spirit among the listeners. This was my first project for the band. The aim was to create a lyric music video for one of their new songs that tells a love story between a boy and a girl that come from different regions separated by a river. Check out the video here.]]></description>
 		<tags>
 			<tag>#musicVideo</tag>
 		</tags>
 		<link>https://www.youtube.com/watch?v=1JQuBYKW3c4</link>
+	</item>	
+	<item>
+		<types>
+			<type>video</type>
+		</types>
+		<title><![CDATA[Multimedia coordiantor at EESTEC LC Ljubljana]]></title>
+		<company><![CDATA[EESTEC LC Ljubljana]]></company>
+		<date>2015 - 2016</date>
+		<photo>eestec.jpg</photo>
+		<description><![CDATA[EESTEC is an international student organization that aims to encourage the exchange of ideas among students through professional workshops, cultural student exchanges and publications. As a member of the said organisation, I took the role of the Multimedia coordinator and produced multiple promotional videos. I also took part as the video coordinator for multiple events and have produced two out of three most viewed videos on their YouTube Channel. Check it out here.]]></description>
+		<tags>
+			<tag>#promo #event</tag>
+		</tags>
+		<link>#</link>
+	</item>	
+	<item>
+		<types>
+			<type>video</type>
+		</types>
+		<title><![CDATA[Presentation video for Drogart]]></title>
+		<company><![CDATA[Drogart & Slovenska Filantropija]]></company>
+		<date>December 2016</date>
+		<photo>drog.jpg</photo>
+		<description><![CDATA[Drogart is a non-profit organization with the aim of educating and reducing the harmful effects of alcohol and drugs among young people. Check out the video here.<br><i>“In 2016, Damjan Pjević participated in the program: Development and Promotion of Voluntary Work among Young People in the City of Ljubljana. He took part in the project Creative Challenge, where he put together a remarkable and creative video of young volunteers’ stories that was later used in representing them to the public.” (translated from Slovenian) – Tereza Novak, CEO of Slovene Philanthropy</i>]]></description>
+		<tags>
+			<tag>#promo</tag>
+		</tags>
+		<link>https://www.youtube.com/watch?v=P5iEaMKXw8I</link>
+	</item>	
+	<item>
+		<types>
+			<type>video</type>
+		</types>
+		<title><![CDATA[Na meji nevidnega 2016]]></title>
+		<company><![CDATA[Na meji nevidnega]]></company>
+		<date>October 2016</date>
+		<photo>nmn.jpg</photo>
+		<description><![CDATA[The best way to describe the event would be as a Slovene Comic-con. A convention of fantasy and science fiction. For the 2016 edition, I took the role as the official videographer and produced the after-movie for the event. Click here to check it out.]]></description>
+		<tags>
+			<tag>#event</tag>
+		</tags>
+		<link>https://www.youtube.com/watch?v=9qqf-corCDM</link>
+	</item>	
+	<item>
+		<types>
+			<type>video</type>
+		</types>
+		<title><![CDATA[Bytes of Banking 2016]]></title>
+		<company><![CDATA[Halcom & EESTEC]]></company>
+		<date>July 2016</date>
+		<photo>nmn.jpg</photo>
+		<description><![CDATA[...]]></description>
+		<tags>
+			<tag>#event</tag>
+		</tags>
+		<link>https://www.youtube.com/watch?v=5lpv0jGa75s</link>
 	</item>	
 </portfolio>
 
