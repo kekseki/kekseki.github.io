@@ -1,0 +1,172 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About me</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" type="img/png" href="res/img/favicon.png" media="screen"/> 
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+	<!-- Ikone -->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- nas css--> 
+	<link href="css/style.css" rel="stylesheet"> 
+	<link href="css/about-style.css" rel="stylesheet">
+	<!-- Ta font je tu ker drugace nekaj protestira: --> 
+	<style type="text/css"> 
+		@font-face { font-family: AndaleMono; src: url('res/fonts/andalemo.ttf');  
+	</style>
+</head>
+
+
+<body>
+<header id="myHeader">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<table class="navTab text-center" cellspacing="0">
+				<tr>
+					<td width="20%" class="logoTekst" onclick="location.href='index.html'" rowspan="2" >j.a.</td>
+					<td width="40%" rowspan="2" style="background-color: #000000;">about me</td>
+					<td width="20%" onclick="location.href='projects.html'" rowspan="2">projects</td>
+					<td width="20%" id="myBtn" rowspan="2">contact</td>
+				</tr>
+				<tr>
+				</tr>
+			</table>
+		</div>
+	</div>
+</header>
+<main class="mainn">
+<div class="container-fluid">
+	<div class="row text-center">
+		<div class="col-xs-12 col-sm-12 col-md-8">
+			<div class="tekst">
+				<p>I am an aspiring visual communications designer and typographer from Slovenia. Here I showcase most of the projects that I’ve worked on.</p>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4">
+			<figure><img src="res/img/fotka.jpg"></figure> 
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4">
+			<table class="generalInfo">
+		  		<tr>
+		  			<td colspan="2" style="text-align: center;">General info</td>
+		  		</tr>
+		  		<tr>
+		  			<td>Name</td>
+		  			<td>Jasmina</td>
+		  		</tr>
+		  		<tr>
+		  			<td>Surname</td>
+		  			<td>Ajdini</td>
+		  		</tr>
+		  		<tr>
+		  			<td>Year of Birth</td>
+		  			<td>1997</td>
+		  		</tr>
+			</table>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4">
+			<div class="aboutMore">
+				<button class="btn-style btn-text" onclick="">
+					education
+				</button><br>
+				<button class="btn-style btn-text" onclick="">
+					skills
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-12">
+				<hr class="light">
+			</div>
+			<div class="col-12 social padding">
+				<a href="https://www.linkedin.com/in/jasminaajdini/" target="_blank"><i class="ico fab fa-linkedin-in"></i></a>
+				<a href="https://www.messenger.com/t/jasmina.ajdini" target="_blank"><i class="ico fab fa-facebook-messenger"></i></a>	
+				<a href="mailto:jasmina.ajdini.97@gmail.com" target="_blank"><i class="ico fas fa-envelope"></i></a>
+				<a href="https://www.behance.net/ajasmina/" target="_blank"><i class="ico fab fa-behance"></i></a>
+			</div>			
+			<div class="col-12">
+				<hr class="light">
+				<h5 class="copyText"><i class="far fa-copyright" style="font-size: 18px !important;"></i> 2020 jasmina ajdini</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- MODAL -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+		<table class="kontakti" bgcolor="#EEECE0">
+			<tr class="empty">
+				<td class="prvoP"></td>
+				<td class="ikonaXP drugoP"><i id="closeM" onclick = "closeMond()" class="about_close far fa-times-circle"></i></td>
+			</tr>
+			<tr onclick="window.open('https://www.linkedin.com/in/jasminaajdini/','_blank')">
+				<td class="ikonaP tretjeP"><i class="fab fa-linkedin-in"></i></td>
+				<td class="poravnava cetrtoP">/jasminaajdini/</td>
+			</tr>
+			<tr onclick="window.open('https://www.messenger.com/t/jasmina.ajdini','_blank')">
+				<td class="ikonaP border-all"><i class="fab fa-facebook-messenger"></i></td>
+				<td class="poravnava border-all">/jasminaajdini/</td>
+			</tr>
+			<tr onclick="location.href='mailto:jasmina.ajdini.97@gmail.com'">
+				<td class="ikonaP border-all"><i class="fas fa-envelope"></i></td>
+				<td class="poravnava border-all">jasmina.ajdini.97@gmail.com</td>
+			</tr>
+			<tr onclick="window.open('https://www.behance.net/ajasmina/','_blank')">
+				<td class="ikonaP border-all"><i class="fab fa-behance"></i>
+			</td>
+				<td class="poravnava border-all">/ajasmina/</td>
+			</tr>
+			<tr class="empty">
+				<td class="poravnava border-all"></td>
+				<td class="poravnava border-all"> </td>
+			</tr>
+		</table>
+    </div>
+  </div>
+</div>
+
+<script>
+	var modal = document.getElementById("myModal");
+	var btn = document.getElementById("myBtn");
+	var close = document.getElementById("closeM");
+
+	function closeMond(){
+		modal.style.display = "none";
+	}
+
+	btn.onclick = function(){modal.style.display = "block";}
+	close.onclick = function(){modal.style.display = "none";}
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    closeMond();
+	  }
+	}
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
