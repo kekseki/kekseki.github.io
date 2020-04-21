@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About me</title>
+	<title>Jasmina Ajdini</title>
     <!-- Logo -->
     <link rel="shortcut icon" type="img/png" href="res/img/favicon.png" media="screen"/> 
     <!-- Bootstrap -->
@@ -12,79 +12,41 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<!-- nas css--> 
 	<link href="css/style.css" rel="stylesheet"> 
-	<link href="css/about-style.css" rel="stylesheet">
-	<!-- Ta font je tu ker drugace nekaj protestira: --> 
-	<style type="text/css"> 
-		@font-face { font-family: AndaleMono; src: url('res/fonts/andalemo.ttf');  
-	</style>
 </head>
 
-
 <body>
-<header id="myHeader">
-	<div class="container-fluid padding">
-		<div class="row text-center">
-			<table class="navTab text-center" cellspacing="0">
-				<tr>
-					<td width="20%" class="logoTekst" onclick="location.href='index.html'" rowspan="2" >j.a.</td>
-					<td width="40%" rowspan="2" style="background-color: #000000;">about me</td>
-					<td width="20%" onclick="location.href='projects.html'" rowspan="2">projects</td>
-					<td width="20%" id="myBtn" rowspan="2">contact</td>
-				</tr>
-				<tr>
-				</tr>
-			</table>
+
+<header>
+</header>
+<main>
+<div class="container-fluid padding vertical-center">
+	<div class="row titleText text-center">
+		<div class="col-12">
+			<p>a.jasmina</p>
 		</div>
 	</div>
-</header>
-<main class="mainn">
-<div class="container-fluid">
 	<div class="row text-center">
-		<div class="col-xs-12 col-sm-12 col-md-8">
-			<div class="tekst">
-				<p>I am an aspiring visual communications designer and typographer from Slovenia. Here I showcase most of the projects that I’ve worked on.</p>
-			</div>
+		<div class="col-12">
+			<button class="btn-style btn-text" onclick="location.href='about.html'">about me
+			</button>
 		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4">
-			<figure><img src="res/img/fotka.jpg"></figure> 
+		<div class="col-12">
+			<button class="btn-style btn-text" onclick="location.href='projects.html'">projects
+			</button>
 		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4">
-			<table class="generalInfo">
-		  		<tr>
-		  			<td colspan="2" style="text-align: center;">General info</td>
-		  		</tr>
-		  		<tr>
-		  			<td>Name</td>
-		  			<td>Jasmina</td>
-		  		</tr>
-		  		<tr>
-		  			<td>Surname</td>
-		  			<td>Ajdini</td>
-		  		</tr>
-		  		<tr>
-		  			<td>Year of Birth</td>
-		  			<td>1997</td>
-		  		</tr>
-			</table>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4">
-			<div class="aboutMore">
-				<button class="btn-style btn-text" onclick="">
-					education
-				</button><br>
-				<button class="btn-style btn-text" onclick="">
-					skills
-				</button>
-			</div>
+		<div class="col-12">
+			<button class="btn-style btn-text" id="myBtn">contact
+			</button>
 		</div>
 	</div>
 </div>
+
 </main>
-<footer>
-	<div class="container-fluid padding">
+<footer class="homeFooter">
+	<div class="container-fluid padding vertical-bottom">
 		<div class="row text-center">
 			<div class="col-12">
-				<hr class="light">
+				<hr class="light text-center">
 			</div>
 			<div class="col-12 social padding">
 				<a href="https://www.linkedin.com/in/jasminaajdini/" target="_blank"><i class="ico fab fa-linkedin-in"></i></a>
@@ -154,19 +116,6 @@
 	  }
 	}
 </script>
-<script>
-window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
 </body>
 </html>

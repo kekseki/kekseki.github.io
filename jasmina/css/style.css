@@ -1,14 +1,16 @@
 @font-face {
   font-family: 'Retrocycles';
-  src:  url('res/fonts/Retrocycles.otf');
+  src:  url('../res/fonts/Retrocycles.otf')  format('opentype'),
+  		url('../res/fonts/Retrocycles.ttf')  format('truetype');
 }
 @font-face {
   font-family: 'Grotesk';
-  src:  url('res/fonts/Grotesk.otf');
+  src:  url('../res/fonts/Grotesk.otf')  format('opentype'),
+  		url('../res/fonts/Grotesk.ttf')  format('truetype');
 }
 @font-face {
   font-family: 'AndaleMono';
-  src: url('res/fonts/andalemo.ttf');
+  src: url('../res/fonts/andalemo.ttf');
 }
 
 html, body{
@@ -168,7 +170,7 @@ header{
   
   font-family: AndaleMono;
   font-size: 20px;
-  margin-top: 65px; /*upostevanje headerja da poravna na sred*/
+  /*margin-top: 65px; upostevanje headerja da poravna na sred*/
 }
 
 .poravnava{
@@ -360,11 +362,13 @@ header{
   padding-top:50% !important;
   overflow: hidden;
 }
-.homeFooter{
-	display: none;
-}
 .copyText{
 	font-size: 19px;
+}
+.vertical-bottom{
+  position: absolute;
+  top: 120%;
+  transform: translateY(-120%);
 }
 }
 @media (max-height: 620px) {
