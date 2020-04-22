@@ -33,48 +33,91 @@
 		</div>
 	</div>
 </header>
-<main class="mainn vertical-center">
-<div class="container-fluid">
+<main class="mainn">
+<!-- saj vem da je to precej kmecka resitev but pls no judge -->
+<!-- tabela za komp -->
+<div class="kompTabela container-fluid vertical-center">
 	<div class="row text-center">
-		<div class="col-xs-12 col-sm-12 col-md-8">
-			<div class="tekst">
-				<p>I am an aspiring visual communications designer and typographer from Slovenia. Here I showcase most of the projects that I’ve worked on.</p>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4">
-			<figure><img src="res/img/fotka.jpg"></figure> 
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4">
-			<table class="generalInfo" style="bottom: 0px;">
-		  		<tr>
-		  			<td colspan="2" style="text-align: center;">General info</td>
-		  		</tr>
-		  		<tr>
-		  			<td>Name</td>
-		  			<td>Jasmina</td>
-		  		</tr>
-		  		<tr>
-		  			<td>Surname</td>
-		  			<td>Ajdini</td>
-		  		</tr>
-		  		<tr>
-		  			<td>Year of Birth</td>
-		  			<td>1997</td>
-		  		</tr>
+		<div class="col-12">
+			<table class="aboutTable" border="1px;">
+				<tr>
+					<td></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<td rowspan="4">
+						  ID<br><br>
+						<figure style="text-align: center"><img src="res/img/fotka_obrezana.jpg"></figure> 
+					</td>
+					<td class="extra-padding text-right align-bottom">Name</td>
+					<td class="extra-padding align-bottom">Jasmina</td>
+				</tr>
+				<tr>
+					<td class="text-right">Surname</td>
+					<td>Ajdini</td>
+				</tr>
+				<tr>
+					<td class="text-right">Birth Year</td>
+					<td>1997</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="aboutMore">
+							<button class="btn-style btn-cv btn-text" onclick="">
+								cv
+							</button>
+							<button id="btn-e" class="btn-style btn-text"onclick="">
+								education
+							</button>
+							<button id="btn-s" class="btn-style btn-text"onclick="">
+								skills
+							</button>
+						</div>
+					</td>
+				</tr>
 			</table>
-		</div>
-		<div class="col-xs-12 col-sm-12 col-md-4">
-			<div class="aboutMore">
-				<button id="btn-e" class="btn-style btn-text" onclick="">
-					education
-				</button><br>
-				<button id="btn-s" class="btn-style btn-text" onclick="">
-					skills
-				</button>
-			</div>
 		</div>
 	</div>
 </div>
+<!-- tabela za phone -->
+<div class="phoneTabela container-fluid vertical-center">
+	<div class="row text-center">
+		<div class="col-12">
+			<table class="aboutTable" border="1px;">
+				<tr>
+					<td>ID</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="extra-padding text-right align-bottom">Name</td>
+					<td class="extra-padding align-bottom">Jasmina</td>
+				</tr>
+				<tr>
+					<td class="text-right">Surname</td>
+					<td>Ajdini</td>
+				</tr>
+				<tr>
+					<td class="text-right">Birth Year</td>
+					<td>1997</td>
+				</tr>
+				<tr>
+					<td class="aboutMore text-center" colspan="2">
+						<button class="btn-style btn-cv btn-text"onclick="">
+							cv
+						</button>
+						<button id="btn-ee" class="btn-style btn-text"onclick="">
+							education
+						</button>
+						<button id="btn-ss" class="btn-style btn-text"onclick="">
+							skills
+						</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
 </main>
 <footer>
 	<div class="container-fluid padding vertical-bottom">
@@ -141,7 +184,7 @@
     <div class="education-bodyy col-12">
     	<div class="row rowT">
     		<div class="modalTitle">education</div>
-    		<div class="iks"><i id="closeM" onclick = "closeMonde()" class="about_close far fa-times-circle"></i></div>
+    		<div class="iks"><i id="closeM" onclick = "closeMonde()" class="about_close about_mod far fa-times-circle"></i></div>
     	</div>
 
     	<div class="row">
@@ -215,6 +258,7 @@
   </div>
 </div>
 
+
 <!-- SKILLS MODAL -->
 <div id="skillsModal" class="skillsModal">
   <!-- Modal content -->
@@ -222,62 +266,62 @@
     <div class="skills-bodyy col-12">
     	<div class="row rowT">
     		<div class="modalTitle">skills</div>
-    		<div class="iks"><i id="closeM" onclick = "closeMonds()" class="about_close far fa-times-circle"></i></div>
+    		<div class="iks"><i id="closeM" onclick = "closeMonds()" class="about_close about_mod far fa-times-circle"></i></div>
     	</div>
 
     	<div class="row rowS">
-			<div class="colS col-md-12 col-lg-6 rowFirst">
+			<div class="colS col-md-12 col-lg-6 rowFirstS">
 				<table class="skills-dates tableLeft">
 					<tr>
-						<td class=" noBorder" colspan="2">I am used to working on MAC and WIN operating system.<br><br>Here I listed software I am using most often, but I am familiar with others too. With a star symbol I marked my personal favourites.</td>
+						<td class="noBorder tekstskills" colspan="2">I am used to working on MAC and WIN operating system.<br><br>Here I listed software I am using most often, but I am familiar with others too. With a star symbol I marked my personal favourites.</td>
 					</tr>					
 					<tr>
-						<td class="">  </td>
-						<td class="">Languages</td>
+						<td class="leftCol">  </td>
+						<td class="rightCol">Languages</td>
 					</tr>
 					<tr>
-						<td class="">B2</td>
-						<td class="">English</td>
+						<td class="leftCol">B2</td>
+						<td class="rightCol">English</td>
 					</tr>
 					<tr>
-						<td class="">B1</td>
-						<td class="">German</td>
+						<td class="leftCol">B1</td>
+						<td class="rightCol">German</td>
 					</tr>
 				</table>
 			</div>
 			<div class="col-md-12 col-lg-6 rowFirstS">
 				<table class="skills-dates tableRight">
 					<tr>
-						<td class="">From</td>
-						<td class="">Adobe</td>
+						<td class="leftCol">From</td>
+						<td class="rightCol">Adobe</td>
 					</tr>
 					<tr>
-						<td class="noBottom"><i class="zvezda fas fa-star"></i></td>
-						<td class="">Photoshop</td>
+						<td class="leftCol noBottom text-center"><i class="zvezda fas fa-star"></i></td>
+						<td class="rightCol">Photoshop</td>
 					</tr>
 					<tr>
-						<td class="noBottom"></td>
-						<td class="">InDesign</td>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">InDesign</td>
 					</tr>
 					<tr>
-						<td class="noBottom"></td>
-						<td class="">Illustrator</td>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">Illustrator</td>
 					</tr>	
 					<tr>
-						<td class="noBottom"></td>
-						<td class="">XD</td>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">XD</td>
 					</tr>
 					<tr>
-						<td class="noBottom"></td>
-						<td class="">Lightroom</td>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">Lightroom</td>
 					</tr>
 					<tr>
-						<td class="noBottom"></td>
-						<td class="">Premiere Pro</td>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">Premiere Pro</td>
 					</tr>
 					<tr>
-						<td class=" noBottom borderB"></td>
-						<td class="">Animate</td>
+						<td class="leftCol noBottom borderB"></td>
+						<td class="rightCol">Animate</td>
 					</tr>			
 				</table>
 			</div>
@@ -290,7 +334,7 @@
 						<td class="">Type</td>
 					</tr>
 					<tr>
-						<td class="noBottom"><i class="zvezda fas fa-star"></i></td>
+						<td class="noBottom text-center"><i class="zvezda fas fa-star"></i></td>
 						<td class="noBorder borderL borderR">Glypgs</td>
 					</tr>
 					<tr>
@@ -310,7 +354,7 @@
 						<td class="">Illustration</td>
 					</tr>
 					<tr>
-						<td class="noBottom"><i class="zvezda fas fa-star"></i></td>
+						<td class="noBottom text-center"><i class="zvezda fas fa-star"></i></td>
 						<td class="noBorder borderL borderR">Procreate</td>
 					</tr>
 					<tr>
@@ -322,7 +366,7 @@
 						<td class="">Presentations</td>
 					</tr>
 					<tr>
-						<td class="noBottom"><i class="zvezda fas fa-star"></i></td>
+						<td class="noBottom text-center"><i class="zvezda fas fa-star"></i></td>
 						<td class="noBorder borderL borderR">PowerPoint</td>
 					</tr>
 					<tr>
@@ -332,7 +376,7 @@
 				</table>
 			</div>
 			<div class="col-md-12 col-lg-6">
-				<table class="skills-dates tableRight lastElementS">
+				<table class="skills-dates tableRight lastElementS allBorder">
 					<tr><td class="">Printing</td></tr>
 					<tr><td class="noBottom">preparing files for print and cut</td></tr>
 					<tr><td class="noBottom">printing on wide format inkjet printers (plotters)</td></tr>
@@ -342,7 +386,7 @@
 					<tr><td class="noBottom">scanning </td></tr>
 					<tr><td class="noBottom">framing</td></tr>
 					<tr><td class="noBottom">lining</td></tr>
-					<tr><td class="noBottom borderB"> studio photography</td></tr>			
+					<tr><td class="noBottom"> studio photography</td></tr>			
 				</table>
 			</div>
 		</div>
@@ -351,13 +395,13 @@
 </div>
 
 
-
-
 <script>  //EDUCATION MODAL
 	var modale = document.getElementById("educationModal");
 	var btne = document.getElementById("btn-e");
+	var btnee = document.getElementById("btn-ee");
 
 	btne.onclick = function(){modale.style.display = "block";}
+	btnee.onclick = function(){modale.style.display = "block";}
 	closee.onclick = function(){modale.style.display = "none";}
 
 	function closeMonde(){
@@ -369,8 +413,10 @@
 <script>  //SKILLS MODAL
 	var modals = document.getElementById("skillsModal");
 	var btns = document.getElementById("btn-s");
+	var btnss = document.getElementById("btn-ss");
 
 	btns.onclick = function(){modals.style.display = "block";}
+	btnss.onclick = function(){modals.style.display = "block";}
 	closes.onclick = function(){modals.style.display = "none";}
 
 	function closeMonds(){
@@ -398,22 +444,19 @@
 </script>
 
 
-
-
-
 <script>
-window.onscroll = function() {myFunction()};
+	window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+	    header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+	  }
+	}
 </script>
 </body>
 </html>

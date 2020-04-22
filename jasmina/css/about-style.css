@@ -1,41 +1,35 @@
-.tekst{
-	height: 100%;
-	text-align: left;
+.aboutTable{
 	font-family: AndaleMono;
-	font-size: 32px;
-	padding-top: 25px;
-	padding-left: 150px;
-	padding-right: 40px;
-	padding-bottom: 70px;
+	font-size: 20px;
+	margin: 0px auto;
+	width: 60%;
 }
-.generalInfo{
-	border-collapse: collapse;
-	margin-left: 150px;
-	width: 80%;
-	height: 100%;
-	margin-bottom: 50px;
-}
-.generalInfo td{
-	border: 0.25px solid;
+.aboutTable td{
 	padding: 15px;
+	width: 33.33%;
+}
+img{
+	width: 90%;
+	text-align: center;
+}
+.extra-padding{
+	height: 100%;
 }
 .btn-style{
-	width: 70%;
+	width: 35%;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-.about-more{
-	height: 100%;
+.btn-cv {
+	width: 15%;
 }
-
-img{
-	position: absolute;
-	width: 70%;
-	margin-top: 50px;
-	margin-left: 20px;
-	left: 0;
+.phoneTabela{
+	display: none;
 }
-
-
-
+.aboutMore{
+    text-align: center;
+}
 
 /* The Modal (education) */
 .educationModal {
@@ -168,8 +162,8 @@ img{
   width: 100%;
   height: 100%;
   overflow: hidden !important; /* Enable scroll if needed */ /*fixed can scroll, hidden no scoll*/
-  background-color: red; /* Fallback color */
-  background-color: red; /* Black w/ opacity */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -218,13 +212,12 @@ img{
 
 .skills-dates{
 	border-collapse: collapse;
-	font-size: 100%
-	width: 100%;
-	border: 0.25px solid !important;
+	font-size: 100%;
+	width: 85%;
 }
 .skills-dates td{
 	border: 0.25px solid;
-	padding: 20px;
+	padding: 15px;
 }
 
 .lastElementS{
@@ -238,6 +231,9 @@ img{
 .noBorder{
 	border: 0px solid !important;
 }
+.allBorder{
+	border: 0.25px solid !important;	
+}
 .borderL{
 	border-left: 0.25px solid !important;
 }
@@ -250,49 +246,46 @@ img{
 .borderB{
 	border-bottom: 0.25px solid !important;
 }
-.tableLeft{
-	margin-right: 0; 
-	margin-left: auto;
+.leftCol{
+	width: 20% !important;
+}
+.rightCol{
+	width: 80% !important;
 }
 .tableRight{
-	margin-right: auto; 
-	margin-left: 0;
+	margin-left: 20px !important;
 }
+.tableLeft{
+	margin-left: 40px !important;
+}
+
+
+
+
+
+
+
+
 
 
 
 /*---Media Queries --*/
 @media (max-width: 1250px) {
 	.btn-style{
-		width:185%;
-	}
-	.generalInfo{
-		margin-left: 70px;
-	}
-	.tekst{
-		padding-left: 70px;
-		padding-right: 10px;
-	}
-	img{
-		margin-left: 10px;
+		width: 100%;
 	}
 	.education-bodyy{
+	  width: 780px;
+	}
+	.skills-bodyy{
 	  width: 780px;
 	}
 }
 
 @media (max-width: 992px) {
-	.tekst{
-		padding-left: 50px;
-		padding-bottom: 50px;
-		font-size: 27px;
-	}
-	.generalInfo{
-		margin-left: 50px;
-		height: 75%;
-	}
-	.aboutMore{
-		margin-top: 0px;
+
+	.modalTitle{
+	  padding-top: 10px;
 	}
 	/*edu modal*/
 	.educationModal {
@@ -331,7 +324,7 @@ img{
 	.education-datesL{
 		margin-left: 15px;
 		margin-right: 15px;
-		margin-bottom:100px !important;
+		margin-bottom:80px !important;
 	}
 	.education-datesR{
 		margin-left: 15px;
@@ -339,7 +332,7 @@ img{
 	}
 	.tekstL{
 		margin-top:10px !important;
-		margin-bottom:80px !important;
+		margin-bottom:60px !important;
 	}
 	.tekstR{
 		margin-bottom:5px !important;
@@ -347,7 +340,7 @@ img{
 	.lastElement{
 		padding-bottom: 10px;
 	}
-	.education-bodyy::-webkit-scrollbar {
+	.education-bodyy::-webkit-scrollbar, .skills-bodyy::-webkit-scrollbar {
 	  width: 15px;
 	}
 	.firstCol{
@@ -356,28 +349,80 @@ img{
 	.secondCol{
 	  width: 80% !important;
 	}
+/* skills da bo mobile friendly Content */
+.skillsModal {
+  padding-top:40px; /* Location of the box */
+
+}
+.skills-content {
+  padding: -30px;
+}
+.skills-bodyy{
+  width: 500px;
+  font-size: 18px;
+}
+.colS{
+	padding-bottom: 0;
+}
+.rowS{
+	padding-bottom: 0;
+}
+.skills-dates{
+	border-collapse: collapse;
+	width: 85%;
+	margin: 20px !important;
+}
+.skills-dates td{
+	border: 0.25px solid;
+	padding: 10px;
+}
+.zvezda{
+	font-size: 29px;
+}
+.lastElementS{
+	padding-bottom: 15px;
+}
+.tableRight{
+	margin-left: default;
+}
+.tableLeft{
+	margin-left: default;
+}
+.tekstskills{
+	padding-bottom: 30px !important;
+}
 }
 @media (max-width: 768px) {
-	.btn-style{
-		width: 75%;
+	.kompTabela{
+	display: none;
 	}
-	.tekst{
-		margin-right: auto;
-		margin-left: auto;
-		padding-left: 15%;
-		padding-right: 15%;
+	.phoneTabela{
+	display: block;
+	margin-bottom: 50px;
+	}
+	.aboutTable{
+		font-family: AndaleMono;
 		font-size: 20px;
-		padding-bottom: 15px;
+		margin: 0px auto;
+		width: 90%;
+	}
+	.aboutTable td{
+		padding: 15px;
+		width: 33.33%;
 	}
 	img{
-		margin: 10px;
-		position: relative;
-		width: 40%;
+		width: 90%;
+		text-align: center;
 	}
-	.generalInfo{
-		margin-right: auto;
-		margin-left: auto;
+	.extra-padding{
+		height: 100%;
 	}
+	.btn-style{
+		width: 90% !important;
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+
 .vertical-center{
   position: static;
   top: 0%;
@@ -391,25 +436,12 @@ img{
 .education-bodyy{
   width: 390px;
 }
+.skills-bodyy{
+  width: 390px;
+}
 }
 @media (max-width: 576px) {
-	.btn-style{
-		width: 80%;
-		margin-bottom:35px;
-	}
-	img{
-		width: 80%;
-	}
-	.tekst{
-		width: 80%;
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.generalInfo{
-		margin-top: 22px;
-		margin-bottom: 22px;
-	}
-	.aboutMore{
-		margin-top: 32px;
+	.about_mod{
+		margin-top: 7px !important;
 	}
 }
