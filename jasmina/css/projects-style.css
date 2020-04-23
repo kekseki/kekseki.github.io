@@ -21,8 +21,17 @@
 	border: 0.25px solid;
 	height: 300px !important;
 }
-
-
+.project:hover{
+  background-color: #000000;
+  cursor: pointer;
+  outline: none;
+  font-color: #DB6B5E !important; /*to ne gre*/
+  box-shadow: 9px 11px #000000;
+  color: #ffffff;
+}
+footer{
+	margin-top: 40px;
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
@@ -35,8 +44,10 @@ footer{
 }
 @media (max-width: 576px) {
 .project{
-	width: 300px;
-	margin: 20px;
+	width: 80%;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-bottom: 20px;
 	font-size: 17px;
 }
 .project td:not(.content),.project th{

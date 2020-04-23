@@ -400,14 +400,24 @@
 	var btne = document.getElementById("btn-e");
 	var btnee = document.getElementById("btn-ee");
 
-	btne.onclick = function(){modale.style.display = "block";}
-	btnee.onclick = function(){modale.style.display = "block";}
-	closee.onclick = function(){modale.style.display = "none";}
-
 	function closeMonde(){
 		modale.style.display = "none";
 	}
 
+	btne.onclick = function(){modale.style.display = "block";}
+	btnee.onclick = function(){modale.style.display = "block";}
+	//ce kliknes izven okenca bo zaprlo vse modale
+	window.onclick = function(event) {
+	  if (event.target == modale) {
+	    closeMonde();
+	  }
+	  if (event.target == modals) {
+	    closeMonds();
+	  }
+	  if (event.target == modal) {
+	    closeMond();
+	  }	  	  
+	}
 </script>
 
 <script>  //SKILLS MODAL
@@ -415,13 +425,12 @@
 	var btns = document.getElementById("btn-s");
 	var btnss = document.getElementById("btn-ss");
 
-	btns.onclick = function(){modals.style.display = "block";}
-	btnss.onclick = function(){modals.style.display = "block";}
-	closes.onclick = function(){modals.style.display = "none";}
-
 	function closeMonds(){
 		modals.style.display = "none";
 	}
+
+	btns.onclick = function(){modals.style.display = "block";}
+	btnss.onclick = function(){modals.style.display = "block";}
 
 </script>
 
@@ -436,11 +445,6 @@
 
 	btn.onclick = function(){modal.style.display = "block";}
 	close.onclick = function(){modal.style.display = "none";}
-	window.onclick = function(event) {
-	  if (event.target == modal) {
-	    closeMond();
-	  }
-	}
 </script>
 
 

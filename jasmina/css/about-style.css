@@ -426,7 +426,7 @@ img{
 .vertical-center{
   position: static;
   top: 0%;
-  transform: translateY(00%);
+  transform: translateY(0%);
 }
 .vertical-bottom{
   position: static;
@@ -434,10 +434,12 @@ img{
   transform: translateY(0%);
 }
 .education-bodyy{
-  width: 390px;
+  width: 340px;
+  height: 570px;
 }
 .skills-bodyy{
-  width: 390px;
+  width: 340px;
+  height: 570px;
 }
 }
 @media (max-width: 576px) {

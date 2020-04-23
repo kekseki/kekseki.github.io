@@ -27,8 +27,8 @@ html, body{
 }
 .vertical-bottom{
   position: absolute;
-  top: 111%;
-  transform: translateY(-111%);
+  top: 113%;
+  transform: translateY(-113%);
 }
 .titleText{
 	color: #DB6B5E;
