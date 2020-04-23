@@ -27,9 +27,10 @@ html, body{
 }
 .vertical-bottom{
   position: absolute;
-  top: 113%;
-  transform: translateY(-113%);
+  top: 114%;
+  transform: translateY(-114%);
 }
+
 .titleText{
 	color: #DB6B5E;
 	font-family: Grotesk, sans-serif;
@@ -121,7 +122,8 @@ header{
   font-size: 25px;
 }
 .logoTekst{ /*nav bar: j.a.*/
-  font-size: 30px;
+  font-size: 34px !important;
+  font-family: Grotesk, sans-serif !important;
 }
 
 .navTab td:not(.empty){
@@ -327,13 +329,13 @@ header{
   font-size: 17px;
 }
 .logoTekst{
-  font-size: 22px !important;
+  font-size: 17px !important;
 }
 /*CONTACT MODAL*/
 .kontakti{
-  width: 100px;
+  width: 100px !important;
   margin: 0px;
-  font-size: 15px;
+  font-size: 13px;
 
 }
 .poravnava{
@@ -349,7 +351,7 @@ header{
   padding: 10px;
 }
 .modal {
-  padding-top:50% !important;
+  padding-top: 50px;
   overflow: hidden;
 }
 .copyText{
@@ -367,6 +369,11 @@ header{
 @media (max-height: 620px) {
 .homeFooter{
 	display: none;
+}
+.vertical-center{
+  position: static;
+  top: 0%;
+  transform: translateY(0%);
 }
 }
 
