@@ -114,13 +114,14 @@ header{
 
 .navTab td{
   border: 0.25px solid #000000;
-  vertical-align: middle;
+  padding-top: auto !important;
+  padding-bottom: auto !important;
   color: #DB6B5E;
-  font-family: Grotesk, sans-serif;
-  font-size: 15px;
+  font-family: Retrocycles, sans-serif;
+  font-size: 25px;
 }
 .logoTekst{ /*nav bar: j.a.*/
-  font-size: 30px !important;
+  font-size: 30px;
 }
 
 .navTab td:not(.empty){
@@ -285,7 +286,7 @@ header{
 	width: 75%;
 }
 .navTab td{
-  font-size: 13px;
+  font-size: 20px;
 }
 .logoTekst{
   font-size: 25px !important;
@@ -323,10 +324,10 @@ header{
 	margin-bottom:35px;
 }
 .navTab td{
-  font-size: 10px;
+  font-size: 17px;
 }
 .logoTekst{
-  font-size: 20px !important;
+  font-size: 22px !important;
 }
 /*CONTACT MODAL*/
 .kontakti{
