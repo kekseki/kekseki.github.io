@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<portfolio>
+	<item>
+		<ID>0</ID>
+		<title><![CDATA[campaign for the basketball federation of slovenia]]></title>
+		<date><![CDATA[June 2018]]></date>
+		<client><![CDATA[Sidera Agency, Huawei]]></client>
+		<about><![CDATA[The aim was to create and design an EMUI Theme for Huawei. The final product should draw parallels from and resemble the country of Slovenia.<br>A total number of themes I executed and made responsive were eight. The client launched them with a promotion campaign titled “Slovene talents”.<br>Our group designed a soft and illustrative theme with the city of Ljubljana’s skyline in the background along with over 80 customised icons.<br>The number of downloads in the first quarter was over 200 000. Most of them from Europe and Russia.]]></about>
+		<featuredP>basket/basketFeatured.jpg</featuredP>
+		<ideasP>basket/1.jpg</ideasP>
+		<draftsP>basket/46.jpg</draftsP>
+		<resultsP>basket/final1.jpg</resultsP>
+		<category><![CDATA[UI design, school project]]></category>
+		<duration><![CDATA[4 months]]></duration>
+		<software><![CDATA[adobe Dreamweaver<br>adobe Illustrator<br>adobe Photoshop<br>PowerPoint]]></software>
+		<credits><![CDATA[Tjaša Blažko<br>Janja Cerar<br>Nina Šalomon<br>Jure Ahtik<br>Tanja Nuša Kočevar]]></credits>
+	</item>	
+
+</portfolio>
+
+
+<!--  PRIMER ENEGA ELEMENTA V PORTFOLIO (spodaj dodatna navodila)
+	<item>
+		<ID>1</ID>
+		<title><![CDATA[]]></title>
+		<date><![CDATA[]]></date>
+		<client><![CDATA[]]></client>
+		<about><![CDATA[]]></about>
+		<featuredP></featuredP>
+		<ideasP></ideasP>
+		<draftsP></draftsP>
+		<resultsP></resultsP>
+		<category><![CDATA[]]></category>
+		<duration><![CDATA[]]></duration>
+		<software><![CDATA[]]></software>
+		<credits><![CDATA[]]></credits>
+	</item>	
+	-->
+
+
+<!-- ID daj vsakemu projektu +1 in naj grejo povrsti -->
+<!-- pri Abouts, software, credits,... ne pozabit dodat <br> za novo vrstico-->
+<!-- zgleduj se po že vnešenem primeru in kaj pomeni kaj -->
+<!-- najlažje kopirat ta prazen template med <portflio> značko in pol vnest not padatke -->
+<!-- pri fotkah pazi da vneseš pravilno pot. Potrebno je le napisat v kateri mapi so fotke. Npr. basket je v mapi basket zato napišeš basket/fotka.jpg-->
+<!-- Ves tekst piši vmes med CDATA[...] -->
+<!-- branje te datoteke nebo delovalo če odpreš fajl lokalno. Za testiranje rabiš naložit na strežnik ali pa uporaba programa "Web server for Chrome" -->
+<!-- za kako koli spremembo v izgledu vsakega projekta pa me kontaktiraj. Ona koda v htmluju je honestly kar gnilo napisana -->
