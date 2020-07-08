@@ -3,55 +3,25 @@
 	<!--<link id="stili" rel="stylesheet" href="styles404.css" type="text/css">		-->
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-		.RobotoFont{       /*za 404*/
+		body{       /*za 404*/
 		  font-family: "Roboto", sans-serif;
 		}
-		.getBackHome {
-		    background-color: #2196F3;     
-		    border: none; 
-		    color: white; 
-		    padding: 14px 25px;
-		    text-decoration:none;
-		    cursor: pointer;
-		  }
-		.getBackHome:hover {
-		  background: #0b7dda;
-		  border: none; 
-		  color: white; 
-		  padding: 14px 25px;
-		  text-decoration:none;
-		  cursor: pointer;
-		  }
-		.secretLink {
-		    background-color: #FFDB00;     
-		    border: none; 
-		    color: white; 
-		    padding: 14px 25px;
-		    text-decoration:none;
-		    cursor: pointer;
-		  }
-		.secretlink:hover {
-		  background: #FFBF03;
-		  border: none; 
-		  color: white; 
-		  padding: 14px 25px;
-		  text-decoration:none;
-		  cursor: pointer;
-		  }
-
-		.dolik{
-		  margin-top: 33px;
+		.centerX{
+		  height: 10em;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center
 		}
+		.centerY{
+		  position: absolute;
+		  top: 50%;
+		  -ms-transform: translateY(-50%);
+		  transform: translateY(-50%);
+		}
+
 		h3{
-		    width: 500px;
-		    height: 100px;
+			width: 500px;
 		    font-size: 65px;
-		    position: absolute;
-		    top:0;
-		    bottom: 0;
-		    left: 0;
-		    right: 0;
-		    margin: auto;
 		    text-align: center;
 		}
 		.secondmessage{
@@ -59,17 +29,36 @@
 		  margin-top: 0px;
 		  text-align: center;
 		  font-weight: normal;
-
 		}
+
+		.button {
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		  color: black; 
+		  border: 2px solid #000000;
+		  border-radius: 2em;
+		}
+		.button:hover {
+		  background-color: #0061c2;
+		  color: white;
+		}
+
 	</style>
 	<link rel="shortcut icon" href="res/img/favicon.png" />	
 </head>
-<body class="RobotoFont">
-	<h3>no<br>
-	<p class="secondmessage">404 - you got lost bro</p>
-	<h4></h4>
-	<br>
-	<a href="http://www.pjevic.com" class="getBackHome">Get back home</a>
-	<p class="dolik"><a href="https://www.youtube.com/watch?v=mJYAvNvve0E" class="secretLink">or click here for a random video </a></p>
+<body>
+	<div class="centerX">
+		<div class="centerY">
+			<h3>oh no..<br>
+			<div class="secondmessage">The page you are looking for may have been moved, deleted, or possibly never existed.</div>
+			<a href="https://pjevic.com/" class="button">Home</a>
+			<a href="https://www.youtube.com/watch?v=mJYAvNvve0E" target="_blank" class="button">A random video</a></h3>
+		</div>
+	</div>
 
 </body>
