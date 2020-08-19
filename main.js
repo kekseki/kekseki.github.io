@@ -67,22 +67,3 @@ var siteSliderRange = function() {
 	  
 	};
 	siteCarousel();
-
-
-
-
-$('.slide-onee-item').owlCarousel({
-	    items: 1,
-	    margin: 0,
-	    loop: false,
-	    center: true,
-	    mouseDrag: true,
-	    touchDrag: true,
-	    nav: false,
-	    autoplay: false,
-	    autoHeight: true,
-	    smartSpeed: 700
-	  });
-
-
-
