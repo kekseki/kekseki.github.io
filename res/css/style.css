@@ -23,7 +23,7 @@ a {
 	text-decoration:none !important;
 }
 a:hover{
-	color: #757474;
+	color: #757474 !important;
 }
 
 
@@ -64,7 +64,6 @@ h1{
 }
 .social{
 	padding-right: 10px;
-	color: black;
 }
 h3{
 	font-family: "Circular", sans-serif;
