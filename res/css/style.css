@@ -139,6 +139,9 @@ h3{
 img{
 	width: 95%;
 }
+.fotkaMob{
+	display: none;
+}
 table {
   table-layout: fixed ;
   width: 100% ;
@@ -159,7 +162,6 @@ td {
 .padding{
 	padding: 15px;
 }
-
 /*Contact*/
 .contact{
 	font-size: 50px;
@@ -181,14 +183,6 @@ td {
   font-size: 40px;
   cursor: pointer;
 }
-.hide {
-    opacity:0;
-    left:-100%;
-}
-.show {
-    opacity:1;
-    left:0;
-}
 
 
 /*---Media Queries --*/
@@ -202,10 +196,57 @@ td {
 
 }
 @media (max-width: 576px) {
-
+h1{
+	font-size: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
 }
-@media (max-height: 620px) {
+h2{
+	font-size: 19px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+.socials{
+	font-size: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.social{
+	padding-right: 2px;
+}
+/*About*/
+.about_text{
+	font-size: 18px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.about_text_mob{
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+.mnenja{
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+.slide-one-item .slide blockquote {
+    font-size: 15px;}
+.slide-one-item .slide cite {
+    font-size: 15px; }
 
+.jobTitle{
+	font-size: 25px !important;
+}
+.contact{
+	font-size: 40px;
+}
+.fotka{
+	display: none;
+}
+.fotkaMob{
+	display: block;
+}
 }
 
 /*
