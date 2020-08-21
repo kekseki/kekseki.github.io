@@ -13,8 +13,6 @@ var siteSliderRange = function() {
 	};
 	// siteSliderRange();
 
-
-	
 	var siteCarousel = function () {
 		if ( $('.nonloop-block-13').length > 0 ) {
 			$('.nonloop-block-13').owlCarousel({
@@ -67,3 +65,16 @@ var siteSliderRange = function() {
 	  
 	};
 	siteCarousel();
+
+/*----------------------------------------------*/
+// Back to top button
+/*-----------------------------------------------*/
+const backToTop = document.querySelector('.back-top');
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    backToTop.classList.add("back-top-active");
+  } else {
+    backToTop.classList.remove("back-top-active");
+  }
+})
