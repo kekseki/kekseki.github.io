@@ -69,12 +69,35 @@ var siteSliderRange = function() {
 /*----------------------------------------------*/
 // Back to top button
 /*-----------------------------------------------*/
-const backToTop = document.querySelector('.back-top');
+const toTop = document.querySelector(".to-top");
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    backToTop.classList.add("back-top-active");
+  if (window.pageYOffset > 450) {
+    toTop.classList.add("active");
   } else {
-    backToTop.classList.remove("back-top-active");
+    toTop.classList.remove("active");
+  }
+})
+
+/*----------------------------------------------*/
+// Hide buttons when scroll
+/*-----------------------------------------------*/
+const button = document.querySelector(".buttonOne");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 50) {
+    button.classList.add("hideBut");
+  } else {
+    button.classList.remove("hideBut");
+  }
+})
+
+const button2 = document.querySelector(".buttonTwo");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 50) {
+    button2.classList.add("hideBut");
+  } else {
+    button2.classList.remove("hideBut");
   }
 })

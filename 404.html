@@ -1,10 +1,19 @@
 <head>
 	<title>Page not found</title>
-	<!--<link id="stili" rel="stylesheet" href="styles404.css" type="text/css">		-->
+	<!-- Logo -->
+    <link rel="shortcut icon" type="img/png" href="res/img/favicon.png" media="screen"/> 
 	<style type="text/css">
-		@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+		@font-face {
+		  font-family: 'Circular';		/*font-family: "Circular", sans-serif;*/
+		  src: url('res/fonts/CircularStd-Bold.otf') format('opentype');
+		}
+		@font-face {
+		  font-family: 'RobotoMonoMed';	/*font-family: "RobotoMonoMed", monospace;*/
+		  src: url('res/fonts/RobotoMono-Medium.ttf') format('truetype');
+		}
+
 		body{       /*za 404*/
-		  font-family: "Roboto", sans-serif;
+		  background-color: #eeeeee;
 		}
 		.centerX{
 		  height: 10em;
@@ -20,15 +29,18 @@
 		}
 
 		h3{
-			width: 500px;
 		    font-size: 65px;
 		    text-align: center;
 		}
+		.firstmessage{
+			font-family: "Circular", sans-serif;
+		}
 		.secondmessage{
 		  font-size: 20px;
-		  margin-top: 0px;
+		  margin-top: 15px;
 		  text-align: center;
 		  font-weight: normal;
+		  font-family: "RobotoMonoMed", monospace;
 		}
 
 		.button {
@@ -37,15 +49,15 @@
 		  text-decoration: none;
 		  display: inline-block;
 		  font-size: 16px;
-		  margin: 4px 2px;
 		  cursor: pointer;
 		  color: black; 
-		  border: 2px solid #000000;
-		  border-radius: 2em;
+		  border: 0.5px solid #000000;
+		  font-family: RobotoMonoMed, sans-serif;
 		}
 		.button:hover {
-		  background-color: #0061c2;
+		  background-color: #757474;
 		  color: white;
+		  text-decoration: none;
 		}
 
 	</style>
@@ -54,7 +66,7 @@
 <body>
 	<div class="centerX">
 		<div class="centerY">
-			<h3>oh no..<br>
+			<h3><span class="firstmessage">Stop, wait a minute.</span><br>
 			<div class="secondmessage">The page you are looking for may have been moved, deleted, or possibly never existed.</div>
 			<a href="https://pjevic.com/" class="button">Home</a>
 			<a href="https://www.youtube.com/watch?v=mJYAvNvve0E" target="_blank" class="button">A random video</a></h3>

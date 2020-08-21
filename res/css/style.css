@@ -78,12 +78,7 @@ a:hover{
 .buttonOne{
 	margin-right: 10px;	
 	background-color: var(--opositeColor);
-	border: 0.5px solid;
 	color: var(--clr-Opotext) !important;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
 }
 .buttonOne:hover{
 	background-color: var(--clr-hover);
@@ -91,15 +86,23 @@ a:hover{
 }
 .buttonTwo{	
 	color: var(--clr-text)!important;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	cursor: pointer;
-	border: 0.5px solid;	
 }
 .buttonTwo:hover{
 	background-color: var(--clr-hover);
 	color: var(--clr-Opotext) !important;
+}
+.buttoon{
+	opacity: 1;
+	border: 0.5px solid;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+  transition: all .15s;
+}
+.buttoon.hideBut{
+	opacity: 0;
 }
 
 /*Header*/
@@ -226,17 +229,22 @@ td {
 .emptyspaceBottom{
 	margin-top: 70px;
 }
-.back-top{
-  visibility: hidden;
+.to-top{
+  opacity: 0;
   position: fixed;
   bottom: 50px;
   right: 50px;
   font-size: 40px;
   cursor: pointer;
+  text-decoration: none;
+  pointer-events: none;
+  transition: all .4s;
 }
-.back-top-active {
-  visibility: visible !important;
+.to-top.active {
+  opacity: 1;
+  pointer-events: auto;
 }
+
 
 
 /*---Media Queries --*/
@@ -250,6 +258,10 @@ td {
 
 }
 @media (max-width: 576px) {
+.buttonOne{
+	margin-right: 0px;	
+	display: none;
+}
 h1{
 	font-size: 25px;
 	padding-left: 20px;
@@ -301,6 +313,22 @@ h2{
 .fotkaMob{
 	display: block;
 }
+.to-top{
+  opacity: 0;
+}
+.to-top.active {
+  opacity: 0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+  --background: var(--clr-darkmode);
+  --opositeColor: var(--clr-lightmode);
+  --clr-text: var(--clr-white);
+  --clr-Opotext: var(--clr-black);
+  --clr-technologies: var(--clr-orange);
+  --clr-hover: var(--clr-gray);
+  --clr-secondayColor: var(--clr-orange);
+  }
 }
 
 /*
