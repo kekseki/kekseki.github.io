@@ -53,6 +53,8 @@ var siteSliderRange = function() {
 	    center: false,
 	    mouseDrag: true,
 	    touchDrag: true,
+	        startPosition: 1,
+
 	    nav: false,
 	    autoplay: true,
 	    autoplayTimeout: 7000,
