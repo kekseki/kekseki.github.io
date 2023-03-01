@@ -1,0 +1,146 @@
+body {
+  background-color: var(--background);
+  scroll-behavior: smooth;
+  @include textFont;
+  @include responsive($lg) {
+    margin: auto 4rem;
+  }
+  @include responsive($md) {
+    margin: auto 2rem;
+  }
+}
+
+/*Postavitev*/
+#all-content {
+  width: 56.25rem;
+  margin: 0 auto;
+  @include responsive($lg) {
+    width: 100%;
+  }
+}
+.textOffSet {
+  //ce bi bil tekst zamaknjen od naslova
+  padding: 0 0;
+}
+.section-container {
+  margin-bottom: 12.5rem;
+  @include responsive($lg) {
+    margin-bottom: 10rem;
+  }
+}
+.section-title {
+  padding-bottom: 2.5rem;
+}
+/*Navigation bar*/
+nav {
+  position: relative;
+}
+
+.nav-container {
+  position: absolute;
+  right: 0;
+}
+
+.button {
+  @include responsive($lg) {
+    margin-top: 1rem;
+  }
+  border: 0.5px solid;
+  display: inline-block;
+  text-align: center;
+  padding: 0.75rem;
+  transition: all 0.15s;
+  &:hover {
+    background-color: var(--hover);
+  }
+  &.hideBut {
+    opacity: 0;
+  }
+}
+
+.button-one {
+  background-color: var(--oposite-color);
+  color: var(--opo-text) !important;
+}
+
+.button-two {
+  color: var(---text);
+  background-color: var(--background);
+  &:hover {
+    background-color: var(--hover);
+    color: var(--opo-text) !important;
+  }
+}
+
+/*Header*/
+header {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.social-container {
+  display: flex;
+  gap: 1.75rem;
+  font-size: 2rem;
+}
+
+/*Mnenja*/
+.slide-mnenje,
+.slide-job {
+  @include responsive($md) {
+    display: block !important;
+    margin-bottom: 2.5rem;
+    border: 1px solid;
+    padding: 0.75rem;
+    background-color: var(--sliderMobileBox);
+  }
+  & > p {
+    @include responsive($md) {
+      font-style: normal;
+    }
+  }
+}
+.slide-mnenje {
+  font-style: italic;
+}
+.hideMobile {
+  @include responsive($md) {
+    display: none !important;
+  }
+}
+
+/*Where I Woked*/
+.jobTitle {
+  @include font($roboto-mono, 1.75rem, var(--text), 600);
+  @include responsive($md) {
+    font-size: 1.5rem;
+  }
+  padding-bottom: 0.5rem;
+  & > span {
+    color: var(--seconday-color);
+  }
+}
+.jobDate {
+  font-style: italic;
+}
+
+/*Contact*/
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contact-icon {
+  font-size: 4rem;
+  @include responsive($md) {
+    font-size: 2.5rem;
+  }
+}
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 400;
+}

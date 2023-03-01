@@ -1,0 +1,68 @@
+@import "responsivne";
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "RobotoMono";
+  src: url("../fonts/RobotoMono-VariableFont_wght.ttf");
+  font-weight: 100 800;
+}
+
+$circular: "Circular", sans-serif;
+$roboto-mono: "RobotoMono", monospace;
+
+/*set font using values*/
+@mixin font($font, $size, $color, $weight) {
+  font-family: $font;
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+
+/*Body/normal text*/
+@mixin textFont {
+  @include font($roboto-mono, 1.15rem, var(--text), 300);
+  @include responsive($md) {
+    font-size: 1rem;
+  }
+}
+
+a {
+  color: var(--text);
+  text-decoration: none !important;
+  cursor: pointer;
+  &:hover {
+    color: var(--hover);
+  }
+}
+
+h1 {
+  @include font($circular, 2.5rem, var(--text), 400);
+  margin: 0;
+  @include responsive($lg) {
+    font-size: 2rem;
+  }
+  @include responsive($md) {
+    font-size: 1.75rem;
+  }
+}
+h2 {
+  @include font($roboto-mono, 2rem, var(--text), 300);
+  @include responsive($lg) {
+    font-size: 1.75rem;
+  }
+  @include responsive($md) {
+    font-size: 1.5rem;
+  }
+}
+h3 {
+  @include font($circular, 1.5rem, var(--text), 400);
+  margin: 0;
+}
+.about_link {
+  font-weight: 700;
+  font-style: italic;
+}

@@ -1,0 +1,49 @@
+$blue: #0000ff;
+$white: #fff;
+$black: #000;
+$orange: #f2a365;
+$gray: #757474;
+$darkGray: #5b5b5b;
+//background:
+$lightmode: #eeeeee;
+$darkmode: #212121;
+/*
+//LightMode
+$background: $lightmode;
+$oposite-color: $darkmode;
+$text: $black;
+$opo-text: $white;
+$hover: $gray;
+$seconday-color: $blue;
+$sliderMobileBox: $white;
+
+//DarkMode
+.darkMode {
+  $background: $darkmode;
+  $oposite-color: $lightmode;
+  $text: $white;
+  $opo-text: $black;
+  $hover: $gray;
+  $seconday-color: $orange;
+  $sliderMobileBox: $darkGray;
+}
+*/
+html[data-theme="light"] {
+  --background: #{$lightmode};
+  --oposite-color: #{$darkmode};
+  --text: #{$black};
+  --opo-text: #{$white};
+  --hover: #{$gray};
+  --seconday-color: #{$blue};
+  --sliderMobileBox: #{$white};
+}
+
+html[data-theme="dark"] {
+  --background: #{$darkmode};
+  --oposite-color: #{$lightmode};
+  --text: #{$white};
+  --opo-text: #{$black};
+  --hover: #{$gray};
+  --seconday-color: #{$orange};
+  --sliderMobileBox: #{$darkGray};
+}

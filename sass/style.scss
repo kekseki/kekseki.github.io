@@ -1,0 +1,10 @@
+@import "resources/colors";
+@import "resources/fonts";
+@import "resources/responsivne";
+@import "resources/slider";
+
+@import "./home";
+
+html {
+  scroll-behavior: smooth;
+}
