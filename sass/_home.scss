@@ -83,7 +83,9 @@ header {
 .social-container {
   display: flex;
   gap: 1.75rem;
-  font-size: 2rem;
+}
+.social-icon {
+  height: 2rem;
 }
 
 /*Mnenja*/
@@ -133,9 +135,9 @@ header {
   justify-content: space-evenly;
 }
 .contact-icon {
-  font-size: 4rem;
+  height: 4rem;
   @include responsive($md) {
-    font-size: 2.5rem;
+    height: 2.5rem;
   }
 }
 .contact {
@@ -143,4 +145,7 @@ header {
   align-items: center;
   flex-direction: column;
   font-weight: 400;
+}
+.social-icon:hover {
+  --text: var(--hover);
 }

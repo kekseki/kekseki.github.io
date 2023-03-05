@@ -2,18 +2,18 @@
 //	Dark Mode
 /*-----------------------------------------------*/
 
-var darkMode = localStorage.getItem("darkMode");
-if (darkMode === "1") {
-  enableDarkMode();
-}
+var darkMode; //local variable
+//var darkMode = localStorage.getItem("darkMode"); //local storage
+//if (darkMode === "1") enableDarkMode(); //local storage
+
+//enable dark mode through system preferece:
 if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  document.documentElement.setAttribute("data-theme", "dark");
+  enableDarkMode();
 } else {
-  document.documentElement.setAttribute("data-theme", "light");
+  disableDarkMode();
 }
 
 function goDark() {
-  darkMode = localStorage.getItem("darkMode");
   if (darkMode == "0") {
     enableDarkMode();
   } else {
@@ -22,14 +22,15 @@ function goDark() {
 }
 
 function enableDarkMode() {
-  document.documentElement.setAttribute("data-theme", "dark"); //enable
-  localStorage.setItem("darkMode", 1); //save to local storage
+  document.documentElement.setAttribute("data-theme", "dark");
+  darkMode = 1; //set the session variable
+  //localStorage.setItem("darkMode", 1); //save to local storage
 }
 
 function disableDarkMode() {
   document.documentElement.setAttribute("data-theme", "light");
-  //save to local storage
-  localStorage.setItem("darkMode", 0);
+  darkMode = 0; //set the session variabl
+  //localStorage.setItem("darkMode", 0); //save to local storage
 }
 
 /*----------------------------------------------*/
