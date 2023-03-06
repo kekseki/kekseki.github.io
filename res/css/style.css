@@ -178,6 +178,11 @@ body {
   }
 }
 
+p,
+ul {
+  margin-top: 0;
+}
+
 .textOffSet {
   padding: 0 0;
 }
@@ -302,29 +307,26 @@ header {
 
 .jobDate {
   font-style: italic;
+  margin-bottom: 1em;
 }
 
 /*Contact*/
 .contact-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .contact-icon {
-  height: 4rem;
-}
-@media screen and (max-width: 48rem) {
-  .contact-icon {
-    height: 2.5rem;
-  }
+  height: 2rem;
 }
 
 .contact {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   font-weight: 400;
+  gap: 1.5rem;
 }
 
 .social-icon:hover {
